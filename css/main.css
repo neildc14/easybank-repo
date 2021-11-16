@@ -282,12 +282,14 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
-main {
-  background-color: #fafafa;
+@media screen and (max-width: 5000px) and (min-width: 1200) {
+  main {
+    background-color: #fafafa;
+  }
 }
 @media screen and (max-width: 800px) {
   main {
-    position: absolute;
+    position: relative;
     top: 0;
     max-width: 100% !important;
     padding: 0 !important;
@@ -345,7 +347,7 @@ main .main__information .details {
 }
 main .main__information h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   padding: 8px 0;
   font-weight: 700;
   color: #2d314d;
@@ -366,4 +368,42 @@ main .main__information .main__request-button {
 }
 main .main__information .main__request-button:hover {
   opacity: 0.4;
+}
+
+.about {
+  padding: 40px 20px;
+  background-color: #fafafa;
+  color: #9698a6;
+}
+.about .about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.about .about__container .about__header {
+  color: #2d314d;
+  font-size: 2.5rem;
+  padding-bottom: 5px;
+}
+.about .row__container {
+  margin-top: 2rem;
+}
+.about .row__container .column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.about .row__container .column h3 {
+  padding: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #40456d;
+}
+.about .row__container .column p {
+  padding-top: 10px;
+  font-size: 18px;
 }

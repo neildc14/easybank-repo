@@ -1,0 +1,51 @@
+.about{
+    
+    padding: 40px 20px;
+    background-color: $verylight-gray;
+    color: $grayish-blue;
+
+    .about__container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       text-align: center;
+
+       .about__header{
+           color: $dark-blue;
+           font-size: 2.5rem;
+           padding-bottom: 5px;
+       }
+
+
+    }
+
+    
+    .row__container{
+        margin-top: 2rem;
+
+        .column{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+
+            h3{
+                padding: 20px 0;
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: lighten($dark-blue, 10);
+                
+            }
+            p{
+                padding-top: 10px;
+                font-size: 18px;
+                
+                
+            }
+        }
+    }
+    
+}
+
