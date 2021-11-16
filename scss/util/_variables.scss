@@ -1,0 +1,40 @@
+//primary colors
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+
+// Neutral
+
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayishblue: hsl(220, 16%, 96%);
+$verylight-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+$body-font: 18px;
+$f-publicsans: 'Public Sans', sans-serif;
+$fw-300: 300;
+$fw-400: 400;
+$fw-700: 700;
+
+//breakpoints
+$sm: 600px;
+$md: 800px;
+$lg: 1000px;
+$xlg: 1200px;
+
+
+//z-index
+$z-indexes: (
+  'modal': 5000,
+  'dropdown': 4000,
+  'default': 1,
+  'below': -1,
+);
+
+//transitions
+$ease: all .5s ease;
+
+
+

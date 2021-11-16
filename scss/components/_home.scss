@@ -1,0 +1,114 @@
+body{
+    font-family: $f-publicsans;
+}
+
+main{
+    background-color: $verylight-gray;
+   
+    
+
+    @include breakPoints(800px){
+        position: absolute;
+        top: 0;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        
+    }
+
+    .main__hero{
+        
+        @include breakPoints(800px){
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+            top: 0; 
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+
+        }
+
+        @include breakPoints(5000px, 801px){
+            flex-direction: row;
+            
+
+        }
+    }
+    
+
+    .main__images{
+
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+
+        @include breakPoints(800px){
+        background-position: top -20px ;
+        
+
+       img{
+        position: relative;  
+        top: -120px;
+        z-index: z(default);
+
+       }
+
+        }
+
+        @include breakPoints(801, 5000px){
+            img{
+                position: relative;
+                top: 300px;
+            }
+        }
+     }
+
+    .main__information{
+        
+        position: relative;
+        top: -55px;
+        z-index: z(dropdown);
+        text-align: center;
+
+        .details{
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            line-height: 2;
+            
+        }
+
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 8px 0;
+            font-weight: 700;
+            color: $dark-blue;
+
+        }
+
+        p{
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            color: $grayish-blue;
+        }
+
+        .main__request-button{
+            display: inline-block;
+            margin: 2rem auto;
+            padding: 8px 20px;
+            border-radius: 100px;
+            color: $white; 
+            background: linear-gradient(to right, $lime-green, $bright-cyan);
+    
+            &:hover{
+                @include hoverOpacity
+            }
+    
+        }
+    }
+}
+
