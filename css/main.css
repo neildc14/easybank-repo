@@ -318,7 +318,7 @@ main .main__images {
 }
 @media screen and (max-width: 800px) {
   main .main__images {
-    background-position: top -20px;
+    background-position: top;
   }
   main .main__images img {
     position: relative;
@@ -406,4 +406,40 @@ main .main__information .main__request-button:hover {
 .about .row__container .column p {
   padding-top: 10px;
   font-size: 18px;
+}
+
+.blog {
+  margin-top: 2rem;
+  padding: 40px 20px;
+  font-size: 18px;
+}
+.blog p, .blog h3 {
+  color: #9698a6;
+}
+.blog .blog__articles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.blog .blog__articles h2 {
+  padding-bottom: 40px;
+  font-size: 2.5rem;
+}
+.blog .card {
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.blog .card__details {
+  padding: 30px;
+  text-align: left;
+}
+.blog .card__details h3 {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.blog .card__details h4 {
+  padding: 10px 0;
+  font-weight: 700;
+  color: #4a507d;
 }

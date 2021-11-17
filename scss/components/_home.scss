@@ -2,14 +2,11 @@ body{
     font-family: $f-publicsans;
 }
 
-main{
-    
+main{ 
     @include breakPoints(5000px, 1200){
         background-color: $verylight-gray;
     }
    
-    
-
     @include breakPoints(800px){
         position: relative;  //making it not overlaps the about
         top: 0;
@@ -20,7 +17,6 @@ main{
     }
 
     .main__hero{
-        
         @include breakPoints(800px){
             display: flex;
             flex-direction: column-reverse;
@@ -41,21 +37,18 @@ main{
     
 
     .main__images{
-
         background-repeat: no-repeat;
         background-size: cover;
-       
-
+    
         @include breakPoints(800px){
-        background-position: top -20px ;
+        background-position: top;
         
+            img{
+                position: relative;  
+                top: -120px;
+                z-index: z(default);
 
-       img{
-        position: relative;  
-        top: -120px;
-        z-index: z(default);
-
-       }
+            }
 
         }
 
@@ -65,10 +58,9 @@ main{
                 top: 300px;
             }
         }
-     }
+    }
 
-    .main__information{
-        
+    .main__information{  
         position: relative;
         top: -55px;
         z-index: z(dropdown);
