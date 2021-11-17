@@ -1,0 +1,47 @@
+.blog{
+    margin-top: 2rem;
+    padding: 40px 20px;
+    font-size: 18px;
+
+    p, h3{
+        color: $grayish-blue;
+    }
+
+    .blog__articles{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h2{
+            padding-bottom: 40px;
+            font-size: 2.5rem;
+
+        }
+    }
+
+    .card{
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+
+    .card__details{
+        padding: 30px;
+        text-align: left;
+
+        h3{
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+
+        h4{
+            padding: 10px 0;
+            font-weight: 700;
+            color: lighten($dark-blue, 15);
+
+        }
+    }
+    
+}
+
+
