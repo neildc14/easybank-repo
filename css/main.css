@@ -299,6 +299,7 @@ body {
 @media screen and (max-width: 800px) {
   main .main__hero {
     display: flex;
+    flex: 1;
     flex-direction: column-reverse;
     position: relative;
     top: 0;
@@ -307,8 +308,10 @@ body {
     margin: 0 !important;
   }
 }
-@media screen and (max-width: 5000px) and (min-width: 801px) {
+@media screen and (max-width: 1300px) and (min-width: 801px) {
   main .main__hero {
+    top: 150px;
+    display: flex;
     flex-direction: row;
   }
 }
@@ -324,19 +327,31 @@ main .main__images {
     position: relative;
     top: -120px;
     z-index: 1;
+    width: 100%;
   }
 }
-@media screen and (max-width: 801) and (min-width: 5000px) {
+@media screen and (max-width: 1300) and (min-width: 800px) {
+  main .main__images {
+    width: 70%;
+  }
   main .main__images img {
     position: relative;
     top: 300px;
+    width: 100%;
   }
 }
-main .main__information {
-  position: relative;
-  top: -55px;
-  z-index: 4000;
-  text-align: center;
+@media screen and (max-width: 800px) {
+  main .main__information {
+    position: relative;
+    top: -55px;
+    z-index: 4000;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 801) {
+  main .main__information {
+    width: 30%;
+  }
 }
 main .main__information .details {
   margin: 0 20px;
@@ -344,6 +359,12 @@ main .main__information .details {
   align-items: center;
   flex-direction: column;
   line-height: 2;
+}
+@media screen and (max-width: 1300px) and (min-width: 801px) {
+  main .main__information .details {
+    position: relative;
+    top: 20vh;
+  }
 }
 main .main__information h1 {
   text-align: center;
@@ -358,7 +379,8 @@ main .main__information p {
   letter-spacing: 0.5px;
   color: #9698a6;
 }
-main .main__information .main__request-button {
+
+.request-button {
   display: inline-block;
   margin: 2rem auto;
   padding: 8px 20px;
@@ -366,7 +388,7 @@ main .main__information .main__request-button {
   color: white;
   background: linear-gradient(to right, #31d35c, #2bb7da);
 }
-main .main__information .main__request-button:hover {
+.request-button:hover {
   opacity: 0.4;
 }
 
@@ -451,6 +473,7 @@ footer {
   align-items: center;
   padding: 30px 0;
   background-color: #2d314d;
+  color: #9698a6;
 }
 footer .footer__social_media {
   margin: 10px 0;
@@ -478,4 +501,9 @@ footer .footer__logo img {
   margin: 20px 0;
   height: 25px;
   background: white;
+}
+footer .footer__invite_copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

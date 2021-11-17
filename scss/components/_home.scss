@@ -1,8 +1,8 @@
-body{
+body {
     font-family: $f-publicsans;
 }
 
-main{ 
+main { 
     @include breakPoints(5000px, 1200){
         background-color: $verylight-gray;
     }
@@ -16,9 +16,10 @@ main{
         
     }
 
-    .main__hero{
+    .main__hero {
         @include breakPoints(800px){
             display: flex;
+            flex: 1; //set
             flex-direction: column-reverse;
             position: relative;
             top: 0; 
@@ -28,15 +29,15 @@ main{
 
         }
 
-        @include breakPoints(5000px, 801px){
+        @include breakPoints(1300px, 801px){ //set
+            top: 150px;
+            display: flex;
             flex-direction: row;
-            
-
-        }
+        }    
     }
     
 
-    .main__images{
+    .main__images {
         background-repeat: no-repeat;
         background-size: cover;
     
@@ -47,31 +48,46 @@ main{
                 position: relative;  
                 top: -120px;
                 z-index: z(default);
+                width: 100%;
 
             }
 
         }
 
-        @include breakPoints(801, 5000px){
+        @include breakPoints(1300, 800px){ //set
+            width: 70%;
             img{
                 position: relative;
                 top: 300px;
+                width: 100%;
             }
         }
     }
 
-    .main__information{  
-        position: relative;
-        top: -55px;
-        z-index: z(dropdown);
-        text-align: center;
+    .main__information {  
+        
+        @include breakPoints(800px){
+            position: relative;
+            top: -55px;
+            z-index: z(dropdown);
+            text-align: center;
+        }
+        
+        @include breakPoints(1300px, 801){ //set
+            width: 30%;
+        }
+        
 
-        .details{
+        .details {
             margin: 0 20px;
             display: flex;
             align-items: center;
             flex-direction: column;
             line-height: 2;
+            @include breakPoints(1300px, 801px){ //set
+                position: relative; 
+                top: 20vh;
+            }
             
         }
 
@@ -91,19 +107,20 @@ main{
             color: $grayish-blue;
         }
 
-        .main__request-button{
-            display: inline-block;
-            margin: 2rem auto;
-            padding: 8px 20px;
-            border-radius: 100px;
-            color: $white; 
-            background: linear-gradient(to right, $lime-green, $bright-cyan);
-    
-            &:hover{
-                @include hoverOpacity
-            }
-    
-        }
     }
+}
+
+.request-button {
+    display: inline-block;
+    margin: 2rem auto;
+    padding: 8px 20px;
+    border-radius: 100px;
+    color: $white; 
+    background: linear-gradient(to right, $lime-green, $bright-cyan);
+
+    &:hover{
+        @include hoverOpacity
+    }
+
 }
 

@@ -1,16 +1,16 @@
-header{
+header {
     position: fixed !important;
     top: 0;
     width: 100%;
     z-index: z(modal);
     transition: all .5s ease;
 
-    nav{
+    nav {
         display: flex;
         align-items: center;
         padding: 10px 0;
         
-        ul{
+        ul {
             align-items: center;
             justify-content: flex-end;
     
@@ -20,7 +20,7 @@ header{
                 
             }
                        
-            li{
+            li {
                 padding: 0 10px;
                 @include breakPoints(799px){
                     padding: 20px 0;
@@ -29,11 +29,11 @@ header{
     
                 }
 
-                a{
+                a {
                     color: $grayish-blue !important;
                     font-family: $f-publicsans;
 
-                    &:hover{
+                    &:hover {
                         @include hoverOpacity;
                         transition: $ease;
                        
