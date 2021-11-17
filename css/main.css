@@ -443,3 +443,39 @@ main .main__information .main__request-button:hover {
   font-weight: 700;
   color: #4a507d;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: #2d314d;
+}
+footer .footer__social_media {
+  margin: 10px 0;
+}
+footer .footer__social_media a {
+  padding-left: 10px;
+}
+footer .footer__social_media img {
+  height: 2rem;
+}
+footer .footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer__nav ul li {
+  padding: 10px 0;
+}
+footer .footer__nav ul li a {
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: white;
+}
+footer .footer__logo img {
+  margin: 20px 0;
+  height: 25px;
+  background: white;
+}
